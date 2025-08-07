@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommate Egg Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="main-container w-full max-w-4xl p-6 space-y-6">
+        <h1 class="text-3xl font-semibold text-center">Roommate Egg Tracker</h1>
+        <form id="eggForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+                <label class="block mb-2 font-medium">Name</label>
+                <input type="text" id="name" class="w-full p-2 rounded" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label class="block mb-2 font-medium">Egg Count</label>
+                <input type="number" id="eggCount" class="w-full p-2 rounded" placeholder="Number of eggs" required>
+            </div>
+            <div class="sm:col-span-2">
+                <span class="block mb-2 font-medium">Type</span>
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="radio" id="buy" name="type" value="Buy" class="radio-custom" required>
+                    <label for="buy">Buy</label>
+
+                    <input type="radio" id="eat" name="type" value="Eat" class="radio-custom">
+                    <label for="eat">Eat</label>
+
+                    <input type="radio" id="update" name="type" value="Update" class="radio-custom">
+                    <label for="update">Update</label>
+                </div>
+            </div>
+            <div class="sm:col-span-2 text-center">
+                <button type="submit" class="btn-primary px-4 py-2 rounded text-white font-semibold">Submit</button>
+            </div>
+        </form>
+        <table class="w-full mt-6 table-auto text-left border-collapse table-hover">
+            <thead>
+                <tr>
+                    <th class="border-b p-2">Name</th>
+                    <th class="border-b p-2">Egg Count</th>
+                    <th class="border-b p-2">Type</th>
+                    <th class="border-b p-2">Date</th>
+                </tr>
+            </thead>
+            <tbody id="eggTableBody">
+                <!-- Entries will be added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

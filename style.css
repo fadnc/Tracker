@@ -1,0 +1,65 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74c0fc 0%, #a5d8ff 100%);
+    color: #333;
+}
+
+.main-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #5c9df5 0%, #89d1f5 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(92, 157, 245, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(92, 157, 245, 0.5);
+}
+
+.radio-custom {
+    display: none;
+}
+
+.radio-custom + label {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    color: #333;
+}
+
+.radio-custom:hover + label {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.radio-custom:checked + label {
+    background-color: #5c9df5;
+    color: white;
+    border-color: #478be0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
